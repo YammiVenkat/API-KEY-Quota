@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-FlowVariable" version="SHA-512:025729e7648c394cb068a932c47428e8a8152d8ee031383569952dbb39c756a1b2e1a9662b01d96362517864ba0c901b8e98b544c9e7cebc2141b6e0542120fd"/>
+        <VersionInfo resourceName="Quota-VerifyApiKey" version="SHA-512:153f333cef06e60a101821e95677adba1d8d2df5415d9abcbd6f226403412d186d1051b214a30cbffeb0c072761e1e6d54844b36f13b05dac0e61916729fbcb8"/>
+        <VersionInfo resourceName="RF-API-KEY-Validate" version="SHA-512:19daeeb739cf7d62ad1e65782c0277cfcce9cd6d224916bb89e56573e28c72d60010a49be39c25dd4f8f4617115dc77bdb90085784633c78149f97016675d431"/>
+        <VersionInfo resourceName="RF-Quota-API-Key" version="SHA-512:f37389729fffbcc35c9c9d90c415ba700fc61a9e280358ce53cae5820a08f66c5ad1033eddc077e7f892c5f1af61e1d2897ded192edfeaf8feb727d382862ce6"/>
+        <VersionInfo resourceName="RQ-QuotaKey-Api" version="SHA-512:4983488b4aad8c91281bd58c26b327ddee9ffe82746ce0f39a27867e3ea61c8ea0d01094149e1047d6aef4bab7833c3e5990841b0b72208a5359a47bc9a1b97b"/>
+        <VersionInfo resourceName="Verify-API-Key-APP" version="SHA-512:96ce354f8783cb6c3a4a33cd87cbd24794500e66a7429dcef5aa5cee82f14f2116ac4895963977cd79a41c790a64e3a8f4110b03b3d4f10531f36a0fc461901e"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:d0049e743b4c76dc52023bc67f01915359723b3a9c16d5768041d6116f2cb49d405b59a1a67e572c5d8d3f76e529bff87861946ccc632a77adee4665e261e215"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:e33a568b17b1b2842f861ff799b6a3f065e72ceb2bde5b1a46a2eb2d17067af3fd75e34cfef49fd88cfc0c1fe8e03c35e910a20f91bf713fb991b201a994b5b4"/>
+    </TargetEndpoints>
+</Manifest>

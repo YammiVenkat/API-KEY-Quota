@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ResetQuota async="false" continueOnError="false" enabled="true" name="RQ-QuotaKey-Api">
+    <DisplayName>RQ-QuotaKey-Api</DisplayName>
+    <Properties/>
+    <Quota name="Quota-VerifyApiKey">
+        <Identifier name="_default">
+            <Class ref="request.header.consumerkey">
+                <Allow>3</Allow>
+            </Class>
+        </Identifier>
+    </Quota>
+</ResetQuota>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="false" name="AM-FlowVariable">
+    <DisplayName>AM-FlowVariable</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json" variablePrefix="@" variableSuffix="#">
+           {
+           "QutaAllowed": "@ratelimit.Quota-VerifyApiKey.allowed.count#",
+           "quotaAvailable" : "@ratelimit.Quota-VerifyApiKey.available.count#",
+           "quotaUsed": "@ratelimit.Quota-VerifyApiKey.used.count#"
+           }
+       </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" type="resonse"/>
+</AssignMessage>

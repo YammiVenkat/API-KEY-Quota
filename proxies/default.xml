@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <FaultRules>
+        <FaultRule name="QuotaViolation">
+            <Step>
+                <Name>RQ-QuotaKey-Api</Name>
+            </Step>
+            <Step>
+                <Name>RF-API-KEY-Validate</Name>
+                <Condition>oauthV2.Verify-API-Key-APP.failed == true </Condition>
+            </Step>
+            <Step>
+                <Name>RF-Quota-API-Key</Name>
+            </Step>
+            <Condition>(fault.name="QuotaViolation")</Condition>
+        </FaultRule>
+    </FaultRules>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Verify-API-Key-APP</Name>
+            </Step>
+            <Step>
+                <Name>Quota-VerifyApiKey</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>AM-FlowVariable</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <Flows/>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/quota-apikey-verify</BasePath>
+        <VirtualHost>secure</VirtualHost>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

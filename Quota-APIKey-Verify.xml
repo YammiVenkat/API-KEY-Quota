@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="8" name="Quota-APIKey-Verify">
+    <Basepaths>/quota-apikey-verify</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1626522546746</CreatedAt>
+    <CreatedBy>venkat.narayana1153r@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>Quota-APIKey-Verify</DisplayName>
+    <LastModifiedAt>1626589078873</LastModifiedAt>
+    <LastModifiedBy>venkat.narayana1153r@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:5a5587e81cf90d4b84a07b1a14928089d51e5e94d822c3fcfc9b6aff953505d8469452e4019a318169bd0a3e80d58ffe9a2d26106b9d90b8ba16552c1e4e4f0f:ap-northeast-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-FlowVariable</Policy>
+        <Policy>Quota-VerifyApiKey</Policy>
+        <Policy>RF-API-KEY-Validate</Policy>
+        <Policy>RF-Quota-API-Key</Policy>
+        <Policy>RQ-QuotaKey-Api</Policy>
+        <Policy>Verify-API-Key-APP</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

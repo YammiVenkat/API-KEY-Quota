@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-Quota-API-Key">
+    <DisplayName>RF-Quota-API-Key</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">
+            {
+            "Error_code": 429,
+            "Error_Message" : "Quota got exhausted , counter will reset after one minute please wait till that"
+            }
+            </Payload>
+            <StatusCode>429</StatusCode>
+            <ReasonPhrase>Too many requests</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>
