@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest async="false" continueOnError="false" enabled="true" name="SA-Policy">
+    <DisplayName>SA-Policy</DisplayName>
+    <Properties/>
+    <Identifier ref="request.header.consumerkey"/>
+    <MessageWeight ref="messageWeight"/>
+    <Rate ref="request.header.rate_limit">6pm</Rate>
+    <UseEffectiveCount>true</UseEffectiveCount>
+</SpikeArrest>

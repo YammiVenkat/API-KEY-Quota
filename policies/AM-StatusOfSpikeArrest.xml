@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-StatusOfSpikeArrest">
+    <DisplayName>AM-StatusOfSpikeArrest</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="Application/json" variablePrefix="@" variableSuffix="#">
+          {
+          "Allowed_Count" : "@ratelimit.SA-Policy.allowed.count#",
+          "Used_Count" : "@ratelimit.SA-Policy.used.count#",
+          "Available_Count" : "@ratelimit.SA-Policy.available.count#"
+          }
+      </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

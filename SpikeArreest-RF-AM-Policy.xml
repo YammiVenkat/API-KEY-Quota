@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="SpikeArreest-RF-AM-Policy">
+    <Basepaths>/v1/spikearreest-rf-am-policy</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1626600048614</CreatedAt>
+    <CreatedBy>venkat.narayana1153r@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>SpikeArreest-RF-AM-Policy</DisplayName>
+    <LastModifiedAt>1626663288175</LastModifiedAt>
+    <LastModifiedBy>venkat.narayana1153r@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:7af9d207dd0af33bea543bf31186d8a07653e81f3246bee1050036f2fb06e2b500c2e8439c82164c44854458c85926d0a7a710bb4bf8592a629980627e3ed734:ap-northeast-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-StatusOfSpikeArrest</Policy>
+        <Policy>JavaScript-1</Policy>
+        <Policy>RF-Policy</Policy>
+        <Policy>RF-SpikeArrest</Policy>
+        <Policy>SA-Policy</Policy>
+        <Policy>Verify-API-Key-SpikeArrestPolicy</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-1.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

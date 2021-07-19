@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-StatusOfSpikeArrest" version="SHA-512:502b044450c118d4b027abee47fe30ac9cd2892d0c69ee92b87c34af764418cf34558f2ab0a165d72b5b6508ad17a95d7417a37406505577682fff0f4edcb1a5"/>
+        <VersionInfo resourceName="JavaScript-1" version="SHA-512:5cf0ea15f602024aa350a8b98704ed506054493363f785aaf99b585236be8038d6382fcd6e43c6b93b4f9f475a8663359305396a9f248d2c49e1a71aa7d90ac1"/>
+        <VersionInfo resourceName="RF-Policy" version="SHA-512:2b78a07eef90beced2ac984ccb07ee79c98b5986a8b0a1fe5500f75cb6a14a0817f99ce2ec5ec596b16b479ccd4e75b9454de31651cef2f80b04f2f3dee361f8"/>
+        <VersionInfo resourceName="RF-SpikeArrest" version="SHA-512:b2290692004b47969866b42f3b9fafa6eb8752ca130742b8e784b6cc5345826d4595da203a68e67e96709993dfc387f4403c1232c35265219436d4b469c6633a"/>
+        <VersionInfo resourceName="SA-Policy" version="SHA-512:580f135948a18a1be9d4692be2d26781cca23b4921b48d04e46d4bfd3ff363a3f78e0ed7cace456bf60c98c66341add578191a44a5597904f951bab3adf9018a"/>
+        <VersionInfo resourceName="Verify-API-Key-SpikeArrestPolicy" version="SHA-512:6896ce16aa39fb3f1cfbd20e1a08ebf47ff399829d9f07cb23dae672d2b2dc863dac018f5d6dfa0b3a32588e1bd8400cdfd4c6ad0a86f8ae4600a1626c895033"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:91ff6d6347816e9bd28ffaa01289e85e667b09ac2a7e50bbad862440715c28ce02c69be695e9b6d4ad754544bfdf8230376fc2bad250e64b617a9771d59880d6"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JavaScript-1.js" version="SHA-512:b225c0b82fd9c4a53e9b527c105da31d1b1144639ed42f62d39def68fae21723c2f17741d5f726bd662ae70b0f506ae9ad00bf4b5c796497662656b5b9918c44"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:e33a568b17b1b2842f861ff799b6a3f065e72ceb2bde5b1a46a2eb2d17067af3fd75e34cfef49fd88cfc0c1fe8e03c35e910a20f91bf713fb991b201a994b5b4"/>
+    </TargetEndpoints>
+</Manifest>

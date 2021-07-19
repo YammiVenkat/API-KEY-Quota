@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <FaultRules>
+        <FaultRule name="SpikeQuotaViolation">
+            <Step>
+                <Name>RF-Policy</Name>
+            </Step>
+            <Condition>ratelimit.SA-Policy.failed == true</Condition>
+        </FaultRule>
+    </FaultRules>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Verify-API-Key-SpikeArrestPolicy</Name>
+            </Step>
+            <Step>
+                <Name>RF-SpikeArrest</Name>
+                <Condition>oauthV2.Verify-API-Key-SpikeArrestPolicy.failed==true</Condition>
+            </Step>
+            <Step>
+                <Name>JavaScript-1</Name>
+            </Step>
+            <Step>
+                <Name>SA-Policy</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>AM-StatusOfSpikeArrest</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <Flows/>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/v1/spikearreest-rf-am-policy</BasePath>
+        <VirtualHost>secure</VirtualHost>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>
